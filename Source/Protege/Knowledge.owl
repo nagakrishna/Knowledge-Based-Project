@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Offer_DR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Offer_DR">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Register -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Register">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Register"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#connects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#connects">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#enrolls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#enrolls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#gets_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#gets_treatment">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#treats"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#offers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#offers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#teaches">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#treats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#treats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Class_Strength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Class_Strength">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ExamDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ExamDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Afternoon_Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Afternoon_Session">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Arts_and_Sciences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Arts_and_Sciences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Badminton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Badminton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Basket_Ball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Basket_Ball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Evening_Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Evening_Session">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#IS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#IS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Law_School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Law_School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Medicine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Men_Pool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Men_Pool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Pool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Morning_Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Morning_Session">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Gym"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Pool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Pool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Professors_BS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Professors_BS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Schools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#SCE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Students_BS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Students_BS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Swinney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#UMKC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Volley_Ball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Volley_Ball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+        <ExamDate>05-25-2016 09:00:00</ExamDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ASSC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ASSC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Dr._Lee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Dr._Lee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty"/>
+        <Offer_DR rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#NagaKrishna"/>
+        <teaches rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#ASE"/>
+        <teaches rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#KDM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#FH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#FH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+        <connects rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Haag_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#George -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#George">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Patient"/>
+        <gets_treatment rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Jim"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Haag_Hall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Haag_Hall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+        <connects rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#FH"/>
+        <connects rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Royal_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Jim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Jim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Doctor"/>
+        <treats rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#George"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#KDM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#KDM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+        <ExamDate>05-20-2016 09:00:00</ExamDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#NagaKrishna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#NagaKrishna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student"/>
+        <enrolls rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#KDM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#PB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#PB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Course"/>
+        <ExamDate>05-30-2016 09:00:00</ExamDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#People -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#People">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Bloch_School"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Rao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Rao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Faculty"/>
+        <teaches rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#PB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Royal_Hall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Royal_Hall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student_Union -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student_Union">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Buildings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Vadlamudi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Vadlamudi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nagakrishna/ontologies/2016/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+

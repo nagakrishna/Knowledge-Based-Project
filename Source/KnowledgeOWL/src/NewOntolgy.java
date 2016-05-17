@@ -31,7 +31,7 @@ import org.apache.jena.vocabulary.XSD;
 public class NewOntolgy {
 	
 	public static void main(String args[]){
-		String uriBase = "http://www.eswc2006.org/technologies/ontology";
+		String uriBase = "https://github.com/nagakrishna/Knowledge-Based-Project/Ontology";
 		String NS = uriBase + "#";
 		OntModel base = ModelFactory.createOntologyModel( OntModelSpec.OWL_DL_MEM );
 		base.createOntology(uriBase);
