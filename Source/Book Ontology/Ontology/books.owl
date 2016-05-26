@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/nagakrishna/Knowledge-Based-Project/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/nagakrishna/Knowledge-Based-Project/ontology">
+    <Prefix name="" IRI="https://github.com/nagakrishna/Knowledge-Based-Project/ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InversePublishedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2009"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverseWrittenBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Encyclopedias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Open_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9781904883067"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benjamin_Henry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2016"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverseHasIsbn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9780765613301"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#The_pandora_directive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Books"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9780761500681"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9780205624720"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publishedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joining_Together"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A_Very_Fine_Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9789079092000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perry_Aaren_Yeatts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9780922827190"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bibliography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#9781556523472"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverseCategorizedAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colleen_Aagesen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aaron_Conners"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Johnson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poetry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIsbn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CategorizedAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aad_Aandacht"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isbn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1999"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#A_Very_Fine_Cat"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A_Very_Fine_Cat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Poetry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A_Very_Fine_Cat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9781904883067"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A_Very_Fine_Cat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2011"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A_Very_Fine_Cat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Johnson"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aad_Aandacht"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aad_Aandacht"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aaron_Conners"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aaron_Conners"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#The_pandora_directive"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class IRI="#Books"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Benjamin_Henry"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Benjamin_Henry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bibliography"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bibliography"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Books"/>
+        <Class IRI="#Library"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#Books"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colleen_Aagesen"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colleen_Aagesen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detective"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#The_pandora_directive"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encyclopedias"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encyclopedias"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isbn"/>
+        <Class IRI="#Books"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Johnson"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Johnson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#A_Very_Fine_Cat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Johnson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#Joining_Together"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joining_Together"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joining_Together"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Thriller"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joining_Together"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9780205624720"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joining_Together"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2009"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joining_Together"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Johnson"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Fantasy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9789079092000"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2011"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Aad_Aandacht"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name"/>
+        <Class IRI="#Books"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Open_Fire"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Open_Fire"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Poetry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Open_Fire"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9780922827190"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Open_Fire"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2005"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Open_Fire"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Perry_Aaren_Yeatts"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perry_Aaren_Yeatts"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perry_Aaren_Yeatts"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseWrittenBy"/>
+            <Class IRI="#Open_Fire"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poetry"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poetry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#A_Very_Fine_Cat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poetry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#Open_Fire"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Encyclopedias"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9780765613301"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2007"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Benjamin_Henry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_pandora_directive"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_pandora_directive"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Detective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_pandora_directive"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9780761500681"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_pandora_directive"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#2010"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_pandora_directive"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Aaron_Conners"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thriller"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thriller"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseCategorizedAs"/>
+            <Class IRI="#Joining_Together"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#Books"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1999"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1999"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2004"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2005"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2005"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#Open_Fire"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2006"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2007"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2007"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2008"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2009"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2009"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#Joining_Together"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2010"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2010"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#The_pandora_directive"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2011"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2011"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#A_Very_Fine_Cat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2011"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InversePublishedIn"/>
+            <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2012"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2013"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2015"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2016"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780205624720"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780205624720"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#Joining_Together"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780761500681"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780761500681"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#The_pandora_directive"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780765613301"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780765613301"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#The_encyclopedia_of_strikes_in_American_history"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780922827190"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9780922827190"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#Open_Fire"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9781556523472"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9781556523472"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9781904883067"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9781904883067"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#A_Very_Fine_Cat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9789079092000"/>
+        <Class IRI="#Isbn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#9789079092000"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#InverseHasIsbn"/>
+            <Class IRI="#My_Little_Gypsy_Soul_Mate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CategorizedAs"/>
+            <Class IRI="#Bibliography"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIsbn"/>
+            <Class IRI="#9781556523472"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#publishedIn"/>
+            <Class IRI="#1999"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare_for_Kids:_His_Life_and_Times"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#Colleen_Aagesen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CategorizedAs"/>
+        <ObjectProperty IRI="#InverseCategorizedAs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#InverseHasIsbn"/>
+        <ObjectProperty IRI="#hasIsbn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#InversePublishedIn"/>
+        <ObjectProperty IRI="#publishedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#InverseWrittenBy"/>
+        <ObjectProperty IRI="#writtenBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CategorizedAs"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverseCategorizedAs"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverseHasIsbn"/>
+        <Class IRI="#Isbn"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InversePublishedIn"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverseWrittenBy"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIsbn"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#publishedIn"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CategorizedAs"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverseCategorizedAs"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverseHasIsbn"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InversePublishedIn"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverseWrittenBy"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIsbn"/>
+        <Class IRI="#Isbn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#publishedIn"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+

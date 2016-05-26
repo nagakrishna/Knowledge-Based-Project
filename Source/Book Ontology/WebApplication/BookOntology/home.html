@@ -1,0 +1,60 @@
+<body>
+<div class="row">
+    <div class="col-md-3">
+        <div align="center">
+            <select class="btn btn-default dropdown-toggle" ng-model="selectedAuthorsList" ng-options="item for item in AuthorsList">
+                <option value="">Select Author</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div align="center">
+            <select class="btn btn-default dropdown-toggle" ng-model="selectedCategoryList" ng-options="item for item in CategoryList">
+                <option value="">Select Category</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="col-md-2">
+        <select class="btn btn-default dropdown-toggle" ng-model="selectedYearList" ng-options="item for item in YearList">
+            <option value="">Select Year</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+        <button class="btn btn-default"  ng-click="Results()" style="alignment: center"> Get Results</button>
+    </div>
+
+</div>
+
+<div align="center" style="padding-top: 20px">
+
+</div>
+
+
+<div id="noResults" style="display: none; padding-left: 300px">
+   <h2> <span class="label label-default"> No books found....</span></h2>
+</div>
+
+<div class="contact-list panel panel-default" id="results" style="display: none">
+
+    <div>
+        <h2> <span class="label label-default">{{ number }}</span></h2>
+    </div>
+    <div class="panel-body" >
+        <div class="ui-list-view-bordered" ng-repeat="books in itemsList">
+            <p class="name"><strong> {{ books.name }}</strong></p>
+            <div class="email text-muted">By: {{ books.author }}</div>
+            <div class="email text-muted">ISBN: {{ books.isbn }}</div>
+            <div class="email text-muted">Published in: {{ books.year }}</div>
+            <div class="email text-muted">Category: {{ books.category }}</div>
+            <hr>
+        </div>
+    </div>
+
+</div>
+
+</body>
